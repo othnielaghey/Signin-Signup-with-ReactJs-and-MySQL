@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+
 const Header=()=>{
     return(
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -8,17 +10,17 @@ const Header=()=>{
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <Link to="/" class="nav-link active">Home</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <Link to="/register" class="nav-link">Register</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <Link to="/login" class="nav-link">Login</Link>
                 </li>
                 </ul>
                 <span class="navbar-text">
-                Navbar text with an inline element
+                    ...
                 </span>
             </div>
         </nav>
